@@ -1,13 +1,13 @@
-[debug] [2020-10-27T09:55:58.496Z] ----------------------------------------------------------------------
-[debug] [2020-10-27T09:55:58.500Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2020-10-27T09:55:58.500Z] CLI Version:   8.14.0
-[debug] [2020-10-27T09:55:58.500Z] Platform:      win32
-[debug] [2020-10-27T09:55:58.500Z] Node Version:  v12.18.2
-[debug] [2020-10-27T09:55:58.514Z] Time:          Tue Oct 27 2020 15:55:58 GMT+0600 (Bangladesh Standard Time)
-[debug] [2020-10-27T09:55:58.514Z] ----------------------------------------------------------------------
-[debug] [2020-10-27T09:55:58.514Z] 
-[debug] [2020-10-27T09:55:58.527Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-10-27T09:55:58.528Z] > authorizing via signed-in user
+[debug] [2020-10-27T10:08:35.040Z] ----------------------------------------------------------------------
+[debug] [2020-10-27T10:08:35.044Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-10-27T10:08:35.044Z] CLI Version:   8.14.0
+[debug] [2020-10-27T10:08:35.044Z] Platform:      win32
+[debug] [2020-10-27T10:08:35.044Z] Node Version:  v12.18.2
+[debug] [2020-10-27T10:08:35.058Z] Time:          Tue Oct 27 2020 16:08:35 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-10-27T10:08:35.059Z] ----------------------------------------------------------------------
+[debug] [2020-10-27T10:08:35.059Z] 
+[debug] [2020-10-27T10:08:35.070Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-27T10:08:35.070Z] > authorizing via signed-in user
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -32,25 +32,30 @@ Before we get started, keep in mind:
 [info] but for now we'll just set up a default project.
 [info] 
 [info] i  .firebaserc already has a default project, using fire-auth2. 
-[debug] [2020-10-27T09:56:15.448Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fire-auth2  
- 
-[debug] [2020-10-27T09:56:16.084Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Tue, 27 Oct 2020 09:56:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2020-10-27T09:56:16.084Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
-[debug] [2020-10-27T09:56:16.087Z] HTTP Error: 403, The caller does not have permission
-[debug] [2020-10-27T09:56:16.307Z] FirebaseError: HTTP Error: 403, The caller does not have permission
-    at module.exports (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
-    at Request._callback (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
-    at Request.self.callback (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
-    at Request.emit (events.js:315:20)
-    at Request.EventEmitter.emit (domain.js:482:12)
-    at Request.<anonymous> (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
-    at Request.emit (events.js:315:20)
-    at Request.EventEmitter.emit (domain.js:482:12)
-    at IncomingMessage.<anonymous> (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
-    at Object.onceWrapper (events.js:421:28)
-    at IncomingMessage.emit (events.js:327:22)
-    at IncomingMessage.EventEmitter.emit (domain.js:482:12)
-    at endReadableNT (_stream_readable.js:1221:12)
-    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[debug] [2020-10-27T10:09:00.994Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-10-27T10:09:00.998Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-10-27T10:09:01.257Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-10-27T10:09:12.531Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:23:32)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\github.js:20:16)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:7:22)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
 [error] 
 [error] Error: Failed to get Firebase project fire-auth2. Please make sure the project exists and your account has permission to access it.
