@@ -1,3 +1,4 @@
+
 const firebaseConfig = {
   apiKey: "AIzaSyCMgIc7I-1zaNf_vihhLYmQi34JHD7IliE",
   authDomain: "ema-john-payment-getway.firebaseapp.com",
