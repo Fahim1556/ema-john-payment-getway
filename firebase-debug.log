@@ -59,3 +59,103 @@ For CI servers and headless environments, generate a new token with firebase log
     at Module._compile (internal/modules/cjs/loader.js:1138:30)
 [error] 
 [error] Error: Failed to get Firebase project fire-auth2. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-10-27T10:14:58.581Z] ----------------------------------------------------------------------
+[debug] [2020-10-27T10:14:58.584Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-10-27T10:14:58.585Z] CLI Version:   8.14.0
+[debug] [2020-10-27T10:14:58.585Z] Platform:      win32
+[debug] [2020-10-27T10:14:58.585Z] Node Version:  v12.18.2
+[debug] [2020-10-27T10:14:58.597Z] Time:          Tue Oct 27 2020 16:14:58 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-10-27T10:14:58.597Z] ----------------------------------------------------------------------
+[debug] [2020-10-27T10:14:58.597Z] 
+[debug] [2020-10-27T10:14:58.611Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-27T10:14:58.612Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Web Development\practise-clone-code\ema-john-after-payment-gateway
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using fire-auth2. 
+[debug] [2020-10-27T10:15:08.873Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-10-27T10:15:08.874Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-10-27T10:15:09.388Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 27 Oct 2020 10:15:09 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-27T10:15:09.396Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fire-auth2  
+ 
+[debug] [2020-10-27T10:15:09.856Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Tue, 27 Oct 2020 10:15:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-27T10:15:09.856Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2020-10-27T10:15:09.859Z] HTTP Error: 403, The caller does not have permission
+[debug] [2020-10-27T10:15:10.069Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.<anonymous> (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at IncomingMessage.<anonymous> (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:421:28)
+    at IncomingMessage.emit (events.js:327:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1221:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project fire-auth2. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-10-27T10:20:45.321Z] ----------------------------------------------------------------------
+[debug] [2020-10-27T10:20:45.336Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-10-27T10:20:45.337Z] CLI Version:   8.14.0
+[debug] [2020-10-27T10:20:45.337Z] Platform:      win32
+[debug] [2020-10-27T10:20:45.337Z] Node Version:  v12.18.2
+[debug] [2020-10-27T10:20:45.419Z] Time:          Tue Oct 27 2020 16:20:45 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-10-27T10:20:45.420Z] ----------------------------------------------------------------------
+[debug] [2020-10-27T10:20:45.420Z] 
+[debug] [2020-10-27T10:20:45.444Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-27T10:20:45.445Z] > authorizing via signed-in user
+[debug] [2020-10-27T10:20:45.446Z] [iam] checking project fire-auth2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-27T10:20:45.455Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fire-auth2:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-27T10:20:47.190Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 27 Oct 2020 10:20:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1262","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-27T10:20:47.192Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project fire-auth2:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2020-10-27T10:20:47.193Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fire-auth2  
+ 
+[debug] [2020-10-27T10:20:47.665Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Tue, 27 Oct 2020 10:20:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-27T10:20:47.665Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2020-10-27T10:20:47.673Z] HTTP Error: 403, The caller does not have permission
+[debug] [2020-10-27T10:20:47.891Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.<anonymous> (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at IncomingMessage.<anonymous> (C:\Users\fahim\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:421:28)
+    at IncomingMessage.emit (events.js:327:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1221:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project fire-auth2. Please make sure the project exists and your account has permission to access it.
