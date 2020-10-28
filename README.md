@@ -4,6 +4,7 @@ Ema-John-Simple
 This is a complete e-commerce MERN Stack project. Inspire from Amazon. I just try to make this website based on biggest e-commerce giant amazon with simple features.
 
 Features
+
 Select product to add card
 Login with Google
 Check order Review & History
